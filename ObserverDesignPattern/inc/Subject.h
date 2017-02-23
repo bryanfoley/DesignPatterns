@@ -17,6 +17,7 @@ class Subject{
 	vector< IObserver * > observers;
 public:
 	void registerObserver(IObserver *obs);
+	void removeObserver(IObserver *obs);
     void notifyObservers();
 };
 #endif /* SUBJECT_H_ */

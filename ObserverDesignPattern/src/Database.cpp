@@ -9,7 +9,7 @@
 using namespace std;
 
 Database::Database(){
-	cout << "database created" << endl;
+	cout << "Database (Concrete Subject) created" << endl;
 }
 void Database::notify(){
 	this->notifyObservers();

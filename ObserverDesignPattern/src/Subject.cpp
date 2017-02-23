@@ -17,8 +17,13 @@ void Subject::notifyObservers(){
 	        }
 	    }
 };
+
 void Subject::registerObserver(IObserver *obs){
 	cout << "Observer added" << endl;
 	observers.push_back(obs);
 };
 
+void Subject::removeObserver(IObserver *obs){
+	cout << "Observer removed" << endl;
+	observers.push_back(obs);
+};

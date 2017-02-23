@@ -13,6 +13,7 @@
 using namespace std;
 
 class LogObserver: public IObserver{
+	string name;
 public:
 	LogObserver();
 	void update();
