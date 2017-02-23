@@ -8,9 +8,10 @@
 
 using namespace std;
 
-void BossObserver::update(){
-	cout << "The Boss has been notified" << endl;
-}
+BossObserver::BossObserver(string name){
+	this->name = name;
+	cout << this->name << " Observer created" << endl;}
+void BossObserver::update(){cout << "The Boss, " << name << ", has been notified" << endl;};
 
 
 

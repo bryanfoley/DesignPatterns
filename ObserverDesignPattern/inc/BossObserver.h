@@ -15,10 +15,8 @@ using namespace std;
 class BossObserver: public IObserver{
 	string name;
 public:
-	BossObserver(string name){
-		this->name = name;
-		cout << this->name << " Observer created" << endl;}
-	void update(){cout << "The Boss, " << name << ", has been notified" << endl;};
+	BossObserver(string name);
+	void update();
 };
 
 

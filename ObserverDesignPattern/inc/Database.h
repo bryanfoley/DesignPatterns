@@ -14,9 +14,8 @@ using namespace std;
 
 class Database: public Subject{
 public:
-	Database(){cout << "database created" << endl;};
+	Database();
 	void notify();
-
 };
 
 

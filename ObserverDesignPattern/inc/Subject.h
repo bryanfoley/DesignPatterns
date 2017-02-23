@@ -16,20 +16,8 @@ using namespace std;
 class Subject{
 	vector< IObserver * > observers;
 public:
-	void registerObserver(IObserver *obs){
-		cout << "Observer added" << endl;
-		observers.push_back(obs);
-	};
-
-	void notifyObservers(){for(vector<IObserver*>::const_iterator iter = observers.begin(); iter != observers.end(); ++iter)
-    	{
-        	if(*iter != 0)
-        	{
-            	(*iter)->update();
-        	}
-    	}
-	};
+	void registerObserver(IObserver *obs);
+    void notifyObservers();
 };
-
 #endif /* SUBJECT_H_ */
 

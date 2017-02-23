@@ -8,6 +8,9 @@
 
 using namespace std;
 
+Database::Database(){
+	cout << "database created" << endl;
+}
 void Database::notify(){
 	this->notifyObservers();
 }

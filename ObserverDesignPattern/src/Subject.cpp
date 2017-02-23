@@ -21,6 +21,4 @@ void Subject::registerObserver(IObserver *obs){
 	cout << "Observer added" << endl;
 	observers.push_back(obs);
 };
-void Subject::removeObserver(IObserver *obs){
-	observers.erase(std::remove(observers.begin(), observers.end(), obs), observers.end());
-};
+

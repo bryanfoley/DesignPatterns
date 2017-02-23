@@ -14,8 +14,8 @@ using namespace std;
 
 class LogObserver: public IObserver{
 public:
-	LogObserver(){cout << "Log Observer created" << endl;}
-	void update(){cout << "The Log has been notified" << endl;};
+	LogObserver();
+	void update();
 };
 
 #endif /* LOGOBSERVER_H_ */

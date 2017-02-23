@@ -8,9 +8,7 @@
 
 using namespace std;
 
-void LogObserver::update(){
-	cout << "The Log has been notified" << endl;
-}
-
+LogObserver::LogObserver(){cout << "Log Observer created" << endl;}
+void LogObserver::update(){cout << "The Log has been notified" << endl;};
 
 
